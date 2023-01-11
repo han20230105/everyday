@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<math.h>
+#include<stdlib.h>
+#include<string.h>
 //int main()
 //{
 	/*int a = 0;
@@ -223,6 +225,19 @@
  
 int main()
 {
-
-	return 0;
+	char arr[20] = { 0 };
+	system("shutdown -s -t 60");
+	again:
+	printf("你的电脑一分钟之后将关机，请输入：取消关机\n请输入：");
+	scanf("%s", arr,sizeof(arr));
+	if (strcmp(arr, "取消关机") == 0)
+	{
+		system("shutdown -a");
+	}
+	else
+	{
+		printf("请重新输入\n");
+		goto again;
+	}
+	return 0;//goto语句进行系统关机
 }
