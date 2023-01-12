@@ -223,21 +223,43 @@
 //	return 0;
 //}//二分查找法
  
+//int main()
+//{
+//	char arr[20] = { 0 };
+//	system("shutdown -s -t 60");//60s后关机
+//	again:
+//	printf("你的电脑一分钟之后将关机，请输入：取消关机\n请输入：");
+//	scanf("%s", arr,sizeof(arr));
+//	if (strcmp(arr, "取消关机") == 0)
+//	{
+//		system("shutdown -a");//取消关机
+//	}
+//	else
+//	{
+//		printf("请重新输入\n");
+//		goto again;//gotu语句用于随意跳转，跳出多个循环
+//	}
+//	return 0;//goto语句进行系统关机
+//}
+
+//int add(int x, int y)//定义函数
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = add(a, b);
+//	printf("%d", sum);
+//	return 0;
+//}
+//strcpy（arr1，arr2）；把arr2中的字符拷贝到arr1中；（连同\0一起拷贝），返回地址为char*（返回地址）
+
 int main()
 {
-	char arr[20] = { 0 };
-	system("shutdown -s -t 60");
-	again:
-	printf("你的电脑一分钟之后将关机，请输入：取消关机\n请输入：");
-	scanf("%s", arr,sizeof(arr));
-	if (strcmp(arr, "取消关机") == 0)
-	{
-		system("shutdown -a");
-	}
-	else
-	{
-		printf("请重新输入\n");
-		goto again;
-	}
-	return 0;//goto语句进行系统关机
+
+	return 0;
 }
