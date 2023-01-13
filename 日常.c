@@ -260,6 +260,8 @@
 
 int main()
 {
-
+	char arr[] = { "hello world" };
+	memset(arr, '*', 5);//吧arr里的前五个字符换成*号；
+	printf("%s", arr);
 	return 0;
-}
+}//memset函数//保证不能溢出！
