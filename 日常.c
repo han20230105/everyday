@@ -258,10 +258,68 @@
 //}
 //strcpy（arr1，arr2）；把arr2中的字符拷贝到arr1中；（连同\0一起拷贝），返回地址为char*（返回地址）
 
-int main()
-{
-	char arr[] = { "hello world" };
-	memset(arr, '*', 5);//吧arr里的前五个字符换成*号；
-	printf("%s", arr);
-	return 0;
-}//memset函数//保证不能溢出！
+//int main()
+//{
+//	char arr[] = { "hello world" };
+//	memset(arr, '*', 5);//吧arr里的前五个字符换成*号；
+//	printf("%s", arr);
+//	return 0;
+//}//memset函数//保证不能溢出！
+
+//int get_max(int x, int y)//int是返回类型；get_max是函数名称；int x，int y是输入类型
+//{
+//	if (x < y)
+//		return y;
+//	else
+//		return x;
+//}//定义函数
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = get_max(a, b);//调用get_max函数
+//	printf("max=%d\n", max);
+//	return 0;
+//}//传值调用
+
+//void pro(int* x,int* y)//void表示空（无返回值）；通过指针实现对a内存内实现转移改变
+//{
+//	int z = 0;
+//	z = *x;//*x取x的地址
+//	*x = *y;
+//	*y = z;
+//
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	pro(&a,&b);//通过准确取地址实现对a，b内存处的准确转换
+//	printf("a=%d\nb=%d\n", a, b);
+//	return 0;//传址调用用指针）
+//}//当形参传给实参时，实际上形参只是对实参的一份临时拷贝（数值），对形参进行修改，实参不会改变（需用指针）
+
+//int is_prime(int x)
+//{
+//	int i = 0;
+//	for (i = 2; i <= sqrt(x); i++)//或i<x
+//	{
+//		if (x % i == 0)//存在一个数能把x整除，试除法；
+//		{
+//			return 0;
+//
+//		}
+//	}
+//	//放在循环外！！！
+//		return 1;
+//}
+//int main()
+//{
+//	int a = 0;
+//	for (a = 101; a <= 200; a+=2)
+//	{
+//		if (is_prime(a) == 1)//需求返回值
+//			printf("%d ", a);
+//	}
+//	return 0;
+//}//函数判断素数！
