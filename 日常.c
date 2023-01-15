@@ -87,6 +87,7 @@
 //	printf("\n总共的闰年为：%d\n", sum);
 //	return 0;
 //}//写出1000到2000年的闰年且求总
+
 //int main()
 //{
 //	int i = 0;
@@ -323,3 +324,95 @@
 //	}
 //	return 0;
 //}//函数判断素数！
+
+//int pd(int x)
+//{
+//	if (((x % 4 == 0) && (x % 100 != 0)) || (x % 400 == 0))
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return 0;
+//
+//	}
+//}
+//int main()
+//{
+//	int year = 0;
+//	int sum = 1;
+//	for(year =1000;year<=2000;year++)
+//	{
+//		if (pd(year) == 1)
+//		{
+//			printf("%d ", year);
+//			sum++;
+//		}
+//	}
+//	printf("sum=%d ", sum);
+//	return 0;
+//}函数求闰年
+
+//int binary_search(int x, int k,int arr[])//直接将元素个数x外部求，带入函数，不能内部求！！！
+//{
+//	int right = x - 1;
+//	int left = 0;
+//	while(left <= right)//必须含有等于!
+//	{	
+//		int mid = (left + right) / 2;
+//		if (k > arr[mid])
+//		{
+//			left = mid + 1;
+//		}
+//		else if (k < arr[mid])
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			return mid;
+//			break;
+//		}
+//	}
+//	return -1;
+//}
+//int main()
+//{
+//	int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//	int k = 7;
+//	int sz = sizeof(arr) / sizeof(arr[0]);//外部求函数个数，传参数组只能传首元素地址
+//	int ret = binary_search(sz, k,arr);//需要将arr带入，方便中间值
+//	if (ret == -1)
+//	{
+//		printf("对不起，没找到该数字\n");
+//	}
+//	else
+//	{
+//		printf("找到了，该数字的下标为%d\n",ret);
+//	}
+//	return 0;
+//}函数二分查找
+
+//void add(int* p)//无需返回值，采用空地址void；
+//{
+//	(*p)++;//*p++是对p进行++，需要加（）表示对整体
+//}
+//int main()
+//{
+//	int num = 0;//若需对外部函数改变采用指针！
+//	add(&num);
+//	printf("num=%d\n", num);
+//	add(&num);
+//	printf("num=%d\n", num);
+//	add(&num);
+//	printf("num=%d\n", num);
+//	return 0;
+//}
+
+//int main()
+//{
+//	printf("%d",printf("%d",printf("%d",43)));//链式访问，printf返回值为元素个数
+//	return 0;
+//}
+
+//(.h）文件放函数声明；（.c）文件放函数定义；调用#include".h"；
