@@ -416,3 +416,43 @@
 //}
 
 //(.h）文件放函数声明；（.c）文件放函数定义；调用#include".h"；
+
+//int main()
+//{
+//	printf("hehe\n");
+//	main();
+//	return 0;
+//}//简单递归（自己调用自己）
+
+//void print(int x)//无需返回值
+//{
+//	if (x > 9)//找双位数
+//	{
+//		print(x/10);//反复相除是得x成为单数
+//	}
+//	printf("%d ", x % 10);//取模打印最后位数
+//}
+//int main()
+//{
+//	unsigned int num = 0;//numsigned 表示为无符号
+//	scanf("%d", &num);
+//	print(num);
+//	return 0;
+//}
+
+//int my_strlen(char* arr)
+//{
+//	if (*arr != '\0')//字符串结束的标志为\0；
+//	{
+//		return 1 + my_strlen(arr + 1);//如果不是，递归进行下一位的判断，但是需要加1
+//	}
+//	else
+//		return 0;//如果上来就是\0直接返回
+//}
+//int main()
+//{
+//	char arr[] = "abc";
+//	int ren = my_strlen(arr);
+//	printf("%d", ren);
+//	return 0;
+//}
