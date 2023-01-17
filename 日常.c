@@ -452,7 +452,55 @@
 //int main()
 //{
 //	char arr[] = "abc";
-//	int ren = my_strlen(arr);
+//	int ren = my_strlen(arr);//c传入的是arr的字符中的首位元素
 //	printf("%d", ren);
 //	return 0;
 //}
+
+//int fac(int x)
+//{
+//	if (x <= 1)// == 表示判断
+//		return 1;
+//	else
+//		return x * fac(x - 1);//阶乘公式  n*fac（n-1）
+//
+//}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	int ret = fac(a);
+//	printf("%d", ret);
+//	return 0;
+//}//递归求阶乘
+
+
+//int Fib(int x)
+//{
+//	if (x <= 2)
+//		return 1;
+//	else
+//		return Fib(x - 1) + Fib(x - 2);
+//}//递归求
+//int Fib(int x)
+//{
+//	int a = 1;
+//	int b = 1;
+//	int c = 1;//c=1以防止x=1||2是c=0；
+//	while (x > 2)
+//	{
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		x--;//通过x——实现控制次数（x=5是循环只进行3次）
+//	}
+//	return c;
+//}//迭代求
+//int main()
+//{
+//	int n = 0l;
+//	scanf("%d", &n);
+//	int ret = Fib(n);
+//	printf("%d", ret);
+//	return 0;
+//}//求斐波那契数（斐波那契数：第三个数等于前二个数字的和）
