@@ -583,7 +583,7 @@
 //		}
 //	}
 //}
-//int main()
+//int main() 
 //{
 //	int arr[] = {0,1,2,3,4,5,6,7,8,9};
 //	int sz = sizeof(arr) / sizeof(arr[0]);//数组为传址参数，求数组个数应放函数外
@@ -598,3 +598,39 @@
 
 //数组名便是首元素地址，存在2个例外  1.sizeof（数组名）--数组名表示整个数组，是计算整个数组的大小
                                    //2.&数组名 --整个数组的地址，是数组的开始地址
+
+//int main()
+//{
+//	int a = 3;
+//	int b = 5;
+//	a = a ^ b;// ^ 表示按位（二级制）异或，同为0，异为1；不会存在溢出问题
+//	b = a ^ b;
+//	a = a ^ b;
+//	printf("a=%d b=%d\n ", a, b);
+//	return 0;
+//}//不采用第三个变量交换变量（采用按位异或）
+
+int main()
+{
+	int arr[] = {0,0,1,1,2,2,3,3,4};
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		int j = 0;
+		int count = 0;
+		for (j = 0; j < sz; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				count++;
+			}
+		}
+		if (count == 1)
+		{
+			printf("单独的数字为：%d\n ", arr[i]);
+			break;
+		}
+	}
+	return 0;
+}//找出数组中单独的数字
