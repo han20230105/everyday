@@ -1,13 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS
+#define ROW 3//定义行数
+#define COL 3//定义列数
+//声明
 #include<stdio.h>
-
-#define ROW 9
-#define COL 9
-
-#define ROWS ROW+2
-#define COLS COL+2
-
-void initboard(char mine[ROWS][COLS],int rows,int cols,char set);//用小写作为变量，用大写便是常量，不再是变量
-void initboard(char show[ROW][COL], int rows, int cols, char set);
-
+#include<stdlib.h>
+#include<time.h>
+void initboard(char board[ROW][COL], int row, int col);
 void display(char board[ROW][COL], int row, int col);
+void playermove(char board[ROW][COL], int row, int col);
+void computermove(char board[ROW][COL], int row, int col);
+char iswin(char board[ROW][COL], int row, int col);
+//*玩家赢
+//#电脑赢
+//q平局
+//w继续
