@@ -13,9 +13,12 @@ void game()
 {
 	char mine[ROWS][COLS] = { 0 };//实际棋盘
 	char show[ROW][COL] = { 0 };//展示棋盘
-	initboard(mine, ROWS, COLS,'0');//初始化棋盘
+	initboard(mine, ROWS, COLS,'0');//初始化棋盘,返回字符，以便进行多个棋盘初始化
 	initboard(show, ROWS, COLS,'*');
 	display(show, ROW, COL);//打印棋盘
+	setmine(mine, ROW, COL);//布置雷
+	display(mine, ROW, COL);//打印棋盘
+	findmine(mine, show, ROW, COL);//排雷
 }
 
 void test()
@@ -44,6 +47,7 @@ void test()
 
 int main()
 {
+	srand((unsigned int)time(NULL));
 	test();
 	return 0;
 }
