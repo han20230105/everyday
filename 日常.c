@@ -230,7 +230,7 @@
 //	system("shutdown -s -t 60");//60s后关机
 //	again:
 //	printf("你的电脑一分钟之后将关机，请输入：取消关机\n请输入：");
-//	scanf("%s", arr,sizeof(arr));
+//	scanf("%s ", arr,sizeof(arr));
 //	if (strcmp(arr, "取消关机") == 0)
 //	{
 //		system("shutdown -a");//取消关机
@@ -610,27 +610,75 @@
 //	return 0;
 //}//不采用第三个变量交换变量（采用按位异或）
 
+//int main()
+//{
+//	int arr[] = {0,0,1,1,2,2,3,3,4};
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		int j = 0;
+//		int count = 0;
+//		for (j = 0; j < sz; j++)
+//		{
+//			if (arr[i] == arr[j])
+//			{
+//				count++;
+//			}
+//		}
+//		if (count == 1)
+//		{
+//			printf("单独的数字为：%d\n ", arr[i]);
+//			break;
+//		}
+//	}
+//	return 0;
+//}//找出数组中单独的数字
+
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,4,3,2,1 };
+//	int ret = 0;
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < sz; i++)
+//	{
+//		ret = ret ^ arr[i];//按位异或满足交换律，形同数字为0；
+//	}
+//	printf("单身狗：%d ", ret);
+//	return 0;
+//}采用按位异或找出单身狗；
+
+//5%2取模为1；5/2取商为2；
+//int main()
+//{
+//	double a = 5 / 2.0;取模只能都是整数，其余算数可以采用double浮点型，%lf打印
+//	printf("%lf", a);
+//	return 0;
+//}
+
+//<<左移操作符，左边丢弃，右边补零
+//>>右移操作符；1.算术右移，右边丢弃，左边补原符号位（1为负，0为正）
+               //2.逻辑右移，右边丢弃，左边补0；
+
+//&按位与，一个为零则为零，均不为零则为1
+//|按位与，有1则为1（>=1均为1）
+//^ 按位异或，相同为0，相异为1；
+//均按二进制位异或
+
 int main()
 {
-	int arr[] = {0,0,1,1,2,2,3,3,4};
-	int sz = sizeof(arr) / sizeof(arr[0]);
+	int a = 0;
+	scanf("%d", &a);
+	int count = 0;
 	int i = 0;
-	for (i = 0; i < sz; i++)
+	for (i = 0; i < 32; i++)//一个整数二进制占32个字节
 	{
-		int j = 0;
-		int count = 0;
-		for (j = 0; j < sz; j++)
+		if (1 == ((a >> i) & 1))//通过右移，来对比每一项，并通过与1按位与，均为1则为1，计数；
 		{
-			if (arr[i] == arr[j])
-			{
-				count++;
-			}
-		}
-		if (count == 1)
-		{
-			printf("单独的数字为：%d\n ", arr[i]);
-			break;
+			count++;
 		}
 	}
+	printf("%d", count);
 	return 0;
-}//找出数组中单独的数字
+}
