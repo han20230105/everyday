@@ -666,19 +666,75 @@
 //^ 按位异或，相同为0，相异为1；
 //均按二进制位异或
 
-int main()
-{
-	int a = 0;
-	scanf("%d", &a);
-	int count = 0;
-	int i = 0;
-	for (i = 0; i < 32; i++)//一个整数二进制占32个字节
-	{
-		if (1 == ((a >> i) & 1))//通过右移，来对比每一项，并通过与1按位与，均为1则为1，计数；
-		{
-			count++;
-		}
-	}
-	printf("%d", count);
-	return 0;
-}
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	int count = 0;
+//	int i = 0;
+//	for (i = 0; i < 32; i++)//一个整数二进制占32个字节
+//	{
+//		if (1 == ((a >> i) & 1))//通过右移，来对比每一项，并通过与1按位与，均为1则为1，计数；
+//		{
+//			count++;
+//		}
+//	}
+//	printf("%d", count);
+//	return 0;
+//}
+
+//int main()
+//{
+//	short s = 0;
+//	int a = 10;
+//	printf("%d\n", sizeof(s = a + 5));//2--short占四个字节
+//	printf("%d\n", s);//0
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 11;
+//	a = a | (1 << 2);//1011通过按位或变1111
+//	printf("%d\n", a);
+// a=a&(~1<<2);//变回去
+//	return 0;
+//}
+// 
+//int main()
+//{
+//	int a = (int)3.14;//(类型）强制类型转换
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = 0, a = 0, b = 2, c = 3, d = 4;
+//	i = a++ && ++b && d++;//&&只要左边有假，右边便不在计算，（0未假，非0均为真）
+//	i = a++ || ++b || d++;//||只要左边为真，右边便不在计算，
+//	printf("%d %d %d %d ", a, b, c, d);
+//	return 0;
+//}
+
+//struct stu
+//{
+//	char name[20];
+//	int age;
+//	char id[20];
+//
+//};
+//
+//int main()
+//{
+//	int a = 10;
+//	struct stu s1 = { "张三",12,"2022091059" };
+//	struct stu* ps = &s1;
+//	printf("%s\n",ps->name);
+//	printf("%d\n", ps->age);//结构体指针 -> 成员名
+//	printf("%s\n", s1.name);
+//	printf("%d\n", s1.age);//结构体变量 . 成员名
+//	printf("%s\n", (*ps).name);
+//	printf("%d\n", (*ps).age);//采用指针；
+//	return 0;
+//}
+
