@@ -748,12 +748,25 @@
 //	char c = a+b;
 //	printf("%d ",c)
 //}
+//
+//int main()
+//{
+//	char c = 1;
+//	printf("%d\n", sizeof(c));
+//	printf("%d\n", sizeof(+c));//进行计算，整型提升，变为int
+//	printf("%d\n", sizeof(!c));
+//	return 0;
+//}
 
 int main()
 {
-	char c = 1;
-	printf("%d\n", sizeof(c));
-	printf("%d\n", sizeof(+c));//进行计算，整型提升，变为int
-	printf("%d\n", sizeof(!c));
+	int arr[10] = { 0 };
+	int i = 0;
+	int* p = arr;//*p 每次改变4给字节
+	//char * p=arr;   *p 每次只改变一个字节
+	for (i = 0; i < 10; i++)
+	{
+		*(p + i) = 1;
+	}
 	return 0;
 }
