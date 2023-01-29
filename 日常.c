@@ -758,15 +758,92 @@
 //	return 0;
 //}
 
-int main()
-{
-	int arr[10] = { 0 };
-	int i = 0;
-	int* p = arr;//*p 每次改变4给字节
-	//char * p=arr;   *p 每次只改变一个字节
-	for (i = 0; i < 10; i++)
-	{
-		*(p + i) = 1;
-	}
-	return 0;
-}
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int i = 0;
+//	int* p = arr;//*p 每次改变4给字节
+//	//char * p=arr;   *p 每次只改变一个字节
+//	for (i = 0; i < 10; i++)
+//	{
+//		*(p + i) = 1;//*p++=i <=> *p=i;p++;
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int* pb = &a;
+//	int* p = NULL;//用NULL定义空指针
+//
+//	int* pa = &a;
+//	*pa = 20;
+//	pa = NULL;//用完（释放完）便定义为空指针；后边不能在使用！
+//	return 0;
+//}
+
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int* p = &arr;
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", *p);
+//		p = p + 1; // <=> p+=1;p++
+//	}
+//	return 0;
+//}//指针加减整数
+
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	printf("%d ", &arr[9] - &arr[0]);//9
+//	return 0;
+//}//指针 - 指针 = 中间元素个数//二个指针指向同一个地址（数组）
+
+
+//int my_strlen(char* str)
+//{
+//	char* strlen = str;
+//	char* end = str;
+//	while (*end != '\0')
+//	{
+//		end++;
+//	}
+//	return end - strlen;
+//}
+//
+//int main()
+//{
+//	char arr[] = "bit";
+//	int ren = my_strlen(arr);
+//	printf("%d", ren);
+//	return 0;
+//}//模拟实现strlen
+
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	int* p = arr;
+//	int i = 0;
+//	for (i = 0; i < 10;i++)
+//	{
+//		printf("%p == %p\n", p + i, &arr[i]);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	int* pa = &a;
+//	int** ppa = &pa;//二级指针,**pa使用
+//	int*** 
+//		printf("%d ", **ppa);
+//	int* arr[] = { &a,&b,&c }; 指针数组；
+//		arr[0] = &a;
+//	return 0;
+//}
