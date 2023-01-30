@@ -847,3 +847,80 @@
 //		arr[0] = &a;
 //	return 0;
 //}
+
+//int main()
+//{
+//	int arr[] = { 0,1,2,(3,4) };//(3,4)为逗号表达式，实际意义=4；
+//	printf("%d", sizeof(arr));//sizeof求的单位为字节，1个int为四个字节；
+//	return 0;
+//}
+//
+
+//void init(int arr[],int  sz)
+//{
+//	int a = 0;
+//	for (a = 0; a < sz; a++)
+//	{
+//		arr[a] = 0;
+//	}
+//}
+//
+//void print(int arr[], int sz)
+//{
+//	int a = 0;
+//	for (a = 0; a < sz; a++)
+//	{
+//		printf("%d ", arr[a]);
+//	}
+//}
+//
+//void reverse(int arr[], int sz)
+//{
+//	int a = 0;
+//	int left = 0;
+//	int right = sz-1;
+//	int mid = (left + right) / 2;
+//	for (left = 0; left <= mid; left++)
+//	{
+//		int tmp = 0;
+//		tmp = arr[left];
+//		arr[left] = arr[right-left];
+//		arr[right-left] = tmp;
+//	}
+//}
+//int main()
+//{
+//	int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+//	int sz = sizeof(arr) /sizeof(arr[0]);
+//	//init(arr,sz);//吧数组初始化全0；
+//	//print(arr, sz);//打印
+//	reverse(&arr, sz);//逆置
+//	print(arr, sz);
+//	return 0;
+//}逆置
+
+//int main()
+//{
+//	int arr1[] = { 0,1,2,3 };
+//	int arr2[] = { 4,5,6,7 };
+//	int tmp = 0;
+//	int sz = sizeof(arr1) / sizeof(arr1[0]);
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		tmp = arr1[i];
+//		arr1[i] = arr2[i];
+//		arr2[i] = tmp;
+//		
+//	}
+//	return 0;
+//}//二个数组交换内容
+
+//int main()
+//{
+//	int i = 1;
+//	int ret = (++i) + (++i) + (++i);
+//	printf("ret=%d", ret);
+//	return 0;
+//}//错误代码
+
