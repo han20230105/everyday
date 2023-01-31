@@ -924,3 +924,89 @@
 //	return 0;
 //}//错误代码
 
+//int main()
+//{
+//	int a = 13;
+//	int i = 1;
+//	int b = 0;
+//	int count = 0;
+//	for (b = 0; b<32; b++)//32位bit位
+//	{
+//		if (((a>>b)&i) == 1)//通过右移与来进行对最后一位数的按位与
+//		{
+//			count++;//while(n){n=n&(n-1);count++;}通过按位与来把最后一位1来取消，并进行记录，若最后为0变退出
+//		}
+//	}
+//	printf("count=%d", count);
+//	return 0;
+//}//求二进制中含1的个数
+
+
+//int count_bit(int n)
+//{
+//	int i = 0;
+//	int count = 0;
+//	while (n)
+//	{
+//		n = n & (n - 1);
+//		count++;
+//	}
+//	return count;
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	printf("请输入二个数字\n");
+//	scanf("%d%d", &a, &b);
+//	int c = a ^ b;
+//	int count = count_bit(c);
+//	printf("count=%d\n", count);
+//	return 0;
+//}
+
+
+//void print(int a)
+//{
+//	int i = 0;
+//	for (i =30; i >=0; i -= 2)//保证从左向右打印
+//	{
+//		printf("%d ", (a >> i) & 1);
+//	}
+//	printf("\n");
+//	for (i = 31; i >=0; i -= 2)
+//	{
+//		printf("%d ", (a >> i) & 1);
+//	}
+//	printf("\n");
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	print(a);
+//	return 0;
+//}//分别打印二进制奇数位和偶数位
+//
+
+
+
+//void print(int* arr, int a)
+//{
+//	int i = 0;
+//	for (i = 0; i < a; i++)
+//	{
+//		printf("%d ", *(arr + i));//通过解引用打印
+//	}
+//}
+//
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	print(arr, sz);
+//	return 0;
+//}
+
