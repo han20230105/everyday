@@ -1010,3 +1010,29 @@
 //	return 0;
 //}
 
+
+
+//void print(int a)
+//{
+//	int i = 0;
+//	for (i = 1; i <= a; i++)
+//	{
+//		int j = 0;
+//		for (j = 1; j <= i; j++)
+//		{
+//			printf("%d*%d=%-3d ", i, j, i * j);//通过—3d对齐
+//		}
+//		printf("\n");
+//	}
+//
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	scanf("%d", &a);
+//	print(a);
+//	return 0;
+//}//乘法表
+
+
