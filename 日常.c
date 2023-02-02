@@ -1036,3 +1036,31 @@
 //}//乘法表
 
 
+
+//struct tag
+//{
+//	char name[20];
+//	short age;
+//	char tale[10];
+//}s1,s2,s3;//定义为全局变量//下边用struct tag s1；struct tag s2；使用
+
+//typedef struct tag
+//{
+//	char name[20];
+//	short age;
+//	char tale[20];
+//}tag;//重命名，方便下边直接tag s1；tag s2使用；
+//
+//void print(tag s1)
+//{
+//	printf("%s\n", tag.name);//打印
+//}
+//
+//int main()
+//{
+//	tag s1 = { "zhangsan",20,"156468" };
+//	print(s1);
+//	print(&s1);//传址，用（stu* s1）接收，打印用->箭头打印（s1->name)；//最好传参过程进行传址
+//	return 0;
+//}
+
