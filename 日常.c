@@ -1064,9 +1064,19 @@
 //	return 0;
 //}
 
+
+typedef struct stu
+{
+	char name[20];
+	short age;
+	char alge[10];
+}stu;
+
 int main()
 {
-	int a = 0;
+	stu s1 = { "ÕÅÈı",20,2022091059 };
+	printf("%s", s1.name);
+	stu* pc = &s1;
+	printf("%d", pc->age);
 	return 0;
 }
-
