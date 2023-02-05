@@ -1065,18 +1065,26 @@
 //}
 
 
-typedef struct stu
-{
-	char name[20];
-	short age;
-	char alge[10];
-}stu;
+//typedef struct stu
+//{
+//	char name[20];
+//	short age;
+//	char alge[10];
+//}stu;
+//
+//int main()
+//{
+//	stu s1 = { "张三",20,2022091059 };
+//	printf("%s", s1.name);
+//	stu* pc = &s1;
+//	printf("%d", pc->age);
+//	return 0;
+//}//结构体复习
 
 int main()
 {
-	stu s1 = { "张三",20,2022091059 };
-	printf("%s", s1.name);
-	stu* pc = &s1;
-	printf("%d", pc->age);
+	int i = 0;
+	char* arr = { "1234" };
+	int* pc = &i;
 	return 0;
 }
