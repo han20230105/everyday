@@ -1081,10 +1081,18 @@
 //	return 0;
 //}//结构体复习
 
+//int main()
+//{
+//	int i = 0;
+//	char* arr = { "1234" };
+//	int* pc = &i;
+//	->箭头指向；
+//
+//	return 0;
+//}//指针复习
+
 int main()
 {
-	int i = 0;
-	char* arr = { "1234" };
-	int* pc = &i;
+	int a = 0;
 	return 0;
 }
