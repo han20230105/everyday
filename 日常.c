@@ -1091,8 +1091,18 @@
 //	return 0;
 //}//Ö¸Õë¸´Ï°
 
-int main()
-{
-	int a = 0;
-	return 0;
-}
+//int main()
+//{
+//	int a = 0;
+//	int i = 1;
+//	for (i = 1; i <= 9; i++)
+//	{
+//		int j = 1;
+//		for (j = 1; j <= i; j++)
+//		{
+//			printf("%d*%d=%d ", i, j, i * j);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}99³Ë·¨±í
