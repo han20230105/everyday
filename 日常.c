@@ -1106,3 +1106,10 @@
 //	}
 //	return 0;
 //}99³Ë·¨±í
+
+int main()
+{
+	int a = 0;
+	int i = 0;
+	return 0;
+}
