@@ -1107,9 +1107,21 @@
 //	return 0;
 //}99乘法表
 
-int main()
-{
-	int a = 0;
-	int i = 0;
-	return 0;
-}
+//int main()
+//{
+//	int a = 0;
+//	int i = 0;
+//	while (i)//i为0停止，i非0进行，while循环
+//	{
+//		if (a != 0)
+//		{
+//			a++;
+//		}
+//		else
+//		{
+//			a--;
+//		}
+//	}
+//	return 0;
+//}
+
