@@ -1136,5 +1136,7 @@ int main()
 	int e = 0;
 	int f = 0;
 
+	int i = 0;
+	int j = 0;
 	return 0;
 }
