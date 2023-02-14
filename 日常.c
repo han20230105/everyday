@@ -1138,5 +1138,8 @@ int main()
 
 	int i = 0;
 	int j = 0;
+
+	int r = 0;
+	int n = 0;
 	return 0;
 }
