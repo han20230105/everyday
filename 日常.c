@@ -1144,5 +1144,8 @@ int main()
 	
 	int m = 0;
 	int n = 0;
+
+	int y = 0;
+	int x = 0;
 	return 0;
 }
