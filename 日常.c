@@ -1125,27 +1125,33 @@
 //	return 0;
 //}
 
+//int main()
+//{
+//	int a = 0;
+//	int b = 1;
+//
+//	int c = 1;
+//	int d = 0;
+//
+//	int e = 0;
+//	int f = 0;
+//
+//	int i = 0;
+//	int j = 0;
+//
+//	int r = 0;
+//	int n = 0;
+//	
+//	int m = 0;
+//	int n = 0;
+//
+//	int y = 0;
+//	int x = 0;
+//	return 0;
+//}
+
 int main()
 {
-	int a = 0;
-	int b = 1;
 
-	int c = 1;
-	int d = 0;
-
-	int e = 0;
-	int f = 0;
-
-	int i = 0;
-	int j = 0;
-
-	int r = 0;
-	int n = 0;
-	
-	int m = 0;
-	int n = 0;
-
-	int y = 0;
-	int x = 0;
 	return 0;
 }
