@@ -1158,3 +1158,8 @@
 //	printf("c1=%d c2=%d\n", c1, c2);
 //	return 0;
 //}//整数对应的字符
+
+int main()
+{
+	return 0;
+}
