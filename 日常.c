@@ -1162,6 +1162,7 @@
 int main()
 {
 	int a = 0;
-	float b = 0;%f
+	float b = 0; % f
+		double c = 0;
 	return 0;
 }
