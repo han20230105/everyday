@@ -1165,5 +1165,6 @@ int main()
 	float b = 0; % f
 		double c = 0;
 	long int a = 0;
+	int a = 0;
 	return 0;
 }
