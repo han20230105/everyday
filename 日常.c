@@ -1166,5 +1166,6 @@ int main()
 		double c = 0;
 	long int a = 0;
 	int a = 0;
+	int i = 1;
 	return 0;
 }
