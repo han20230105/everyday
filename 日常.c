@@ -1158,14 +1158,45 @@
 //	printf("c1=%d c2=%d\n", c1, c2);
 //	return 0;
 //}//整数对应的字符
+//
+//int main()
+//{
+//	int a = 0;
+//	float b = 0;
+//	double c = 0;
+//	long int a = 0;
+//	int a = 0;
+//	int i = 1;
+//	return 0;
+//}
 
-int main()
-{
-	int a = 0;
-	float b = 0; % f
-		double c = 0;
-	long int a = 0;
-	int a = 0;
-	int i = 1;
-	return 0;
-}
+//void print(int a)
+//{
+//	int i = 1;
+//	for (i = 1; i <a; i++)
+//	{
+//		a = a * i;
+//	}
+//	printf("%d", a);
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d", &a);
+//	print(a);
+//	return 0;
+//}
+
+//int main()
+//{
+//	char arr1[] = { "a,b,c,d" };
+//	char arr2[] = { "a,b,c,d" };
+//	scanf("%", arr1);
+//	gets(arr2);
+//	printf("%s\n",arr1);
+//	printf("%s\n", arr2);
+//	return 0;
+//}调试%c %s作用以及gets和scanf输入函数的不同作用
+
