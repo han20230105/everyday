@@ -1199,4 +1199,3 @@
 //	printf("%s\n", arr2);
 //	return 0;
 //}调试%c %s作用以及gets和scanf输入函数的不同作用
-
