@@ -1193,15 +1193,16 @@
 //{
 //	char arr1[] = { "a,b,c,d" };
 //	char arr2[] = { "a,b,c,d" };
-//	scanf("%", arr1);
+//	scanf("%s", arr1);
 //	gets(arr2);
 //	printf("%s\n",arr1);
 //	printf("%s\n", arr2);
 //	return 0;
-//}调试%c %s作用以及gets和scanf输入函数的不同作用
+}//调试%c %s作用以及gets和scanf输入函数的不同作用
 
-int main()
+i/*nt main()
 {
 	int a = 0;
 	return 0;
-}
+}*/
+int main()
